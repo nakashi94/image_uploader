@@ -25,6 +25,13 @@ module.exports = {
   rules: {
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", '.ts', '.tsx'] }],
+    "arrow-body-style": ["error", "always"],
+    "react/function-component-definition": [
+      2,
+      {
+        namedComponents: "function-declaration",
+      },
+    ],
   },
   settings: {
     "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
