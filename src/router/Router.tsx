@@ -1,9 +1,9 @@
-import { memo } from 'react';
+import { memo, VFC } from 'react';
 import { Route, Routes } from 'react-router';
 
 import { ImageUploaded, ImageUploader } from '../pages';
 
-const Router = memo(() => {
+const Router: VFC = memo(() => {
   return (
     <Routes>
       <Route path="/" element={<ImageUploader />} />
