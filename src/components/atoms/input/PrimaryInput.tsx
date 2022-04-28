@@ -1,10 +1,10 @@
-import { memo, VFC } from 'react';
+import { ChangeEvent, memo, VFC } from 'react';
 import * as S from './style';
 
 type Props = {
   type: 'file';
   name: string;
-  onChange: () => void;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
 const PrimaryInput: VFC<Props> = memo((props) => {
