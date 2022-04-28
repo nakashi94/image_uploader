@@ -3,11 +3,13 @@ import * as S from './style';
 
 type Props = {
   type: 'file';
+  name: string;
+  onChange: () => void;
 };
 
 const PrimaryInput: VFC<Props> = memo((props) => {
-  const { type } = props;
-  return <S.PrimaryInput type={type} />;
+  const { type, name, onChange } = props;
+  return <S.PrimaryInput type={type} name={name} accept=".png, .jpg" onChange={onChange} />;
 });
 
 export default PrimaryInput;
